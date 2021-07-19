@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>go</title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js">
+</script>
+<link rel="stylesheet"
+type="text/css"
+href="go.css">
+</head>
+
+<body>
+<div class="nav">
+<a href="https://www.marvel.com/">Home</a>
+&nbsp;
+<a href="https://www.marvel.com/characters">Fronts</a>
+&nbsp;
+<a href="https://jobs.disneycareers.com">Goals</a>
+</div>
+<h1 onClick="alert('Hi sir,I am Jarvis.. what i can do for you?');">Avengers Assemble</h1>
+<hr width=50% size=4>
+
+<table cellspacing=4>
+<tr>
+<td><img class="img_gallery" src="1.jpg"></td>
+<td><img class="img_gallery" src="2.jpg"></td>
+<td><img class="img_gallery" src="3.jpg"></td>
+<td rowspan= 2><img id="big_gallery" src="1.jpg"></td>
+<td><img class="img_gallery" src="7.jpg"></td>
+<td><img class="img_gallery" src="8.jpg"></td>
+<td><img class="img_gallery" src="9.jpg"></td>
+</tr>
+<tr>
+<td><img class="img_gallery" src="4.jpeg"></td>
+<td><img class="img_gallery" src="5.jpg"></td>
+<td><img class="img_gallery" src="6.jpg"></td>
+<td><img class="img_gallery" src="10.jpg"></td>
+<td><img class="img_gallery" src="11.jpg"></td>
+<td><img class="img_gallery" src="12.jpg"></td>
+</tr>
+</table>
+
+
+
+<ol>
+<li onClick="console.log('Tum mujhe TESSARACT do.. mai tumhe azaadi dunga');">CONSOLE</li>
+<li id="codec" onClick="call_out()">HYDRA</li>
+<li id="dan_ce" onClick="dance()">Rab</li>
+</ol>
+
+<p id="dark"> Dark mode
+<label id="roman" class="roman">
+<input type="checkbox" class="slider">
+<span class="slider round"></span>
+</label></p>
+
+</body>
+
+<script>
+$('.img_gallery').mouseover(function(){
+	$('#big_gallery').attr('src', $(this).attr('src'));
+});
+
+function call_out(){
+$('#codec').html('Ki Jai Ho !');
+$('#codec').click(function (){
+	$('#codec').html('HYDRA');
+	$('#codec').off('click');
+});
+}
+
+var counter=0;
+$('#dan_ce').html(counter);
+function dance(){
+counter=counter+1;
+$('#dan_ce').html(counter);
+}
+
+function white(){
+if(document.body.style.backgroundColor == "black"){
+	document.body.style.backgroundColor = "white";
+	$('#dark').html('Dark Mode');
+}
+else{
+	document.body.style.backgroundColor = "black";
+	$('#dark').html('Light Mode');
+ }
+}
+
+
+$(document).ready(function(){
+        $('.slider').click(function(){
+            if($(this).prop("checked") == true){
+                document.body.style.backgroundColor = "#020017";
+		document.getElementsByClassName('slider').checked = false;
+            }
+            else if($(this).prop("checked") == false){
+                document.body.style.backgroundColor = "#fff5d9";
+		document.getElementsByClassName('slider').checked = true;
+            }
+        });
+    });
+</script>
+
+</html>
