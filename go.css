@@ -30,9 +30,9 @@ background:#ceffa8;
 width:100px;
 }
 a:hover{
-background:cyan;
+background:#badbd7;
 color: #416a75;
-font-size: 4;
+font-size: 3;
 }
 a{
 font-family: sans-serif;
