@@ -6,7 +6,7 @@ margin-top:0;
 .nav{
   background: rgb(51, 118, 124);
   padding: 3px;
-  font-size: 200%;
+  font-size: 150%;
 }
 hr{
 border-color:red;
@@ -32,7 +32,7 @@ width:100px;
 a:hover{
 background:#badbd7;
 color: #416a75;
-font-size: 3;
+font-size: 2;
 }
 a{
 font-family: sans-serif;
