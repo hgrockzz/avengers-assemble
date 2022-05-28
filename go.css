@@ -34,7 +34,8 @@ width:100px;
 font-family: sans-serif;
 color:#ffffff;
 text-decoration: none;
-padding: 18px 18px;
+font-size: 20px;
+padding: 16px 18px;
 transition: transform 200ms; /* Animation */
 -webkit-transition: transform 200ms;
   /*margin: 0 auto;*/
