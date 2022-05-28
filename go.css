@@ -7,7 +7,6 @@ margin:0;
   background: rgb(51, 118, 124);
   overflow:hidden;
   font-weight: bold;
-  padding: 20px;
 }
 hr{
 border-color:red;
@@ -35,8 +34,9 @@ width:100px;
 font-family: sans-serif;
 color:#ffffff;
 text-decoration: none;
-padding: 20px 18px;
-  transition: transform 200ms; /* Animation */
+padding: 18px 18px;
+transition: transform 200ms; /* Animation */
+-webkit-transition: transform 200ms;
   /*margin: 0 auto;*/
 }
 
