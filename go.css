@@ -29,19 +29,22 @@ li:hover{
 background:#ceffa8;
 width:100px;
 }
-a:hover{
-background:#badbd7;
-color: #416a75;
-transform: scale(120%);
-}
-a{
+
+.nav a{
 font-family: sans-serif;
 color:#ffffff;
 text-decoration: none;
 padding: 17px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
+  transition: transform 200ms; /* Animation */
+  /*margin: 0 auto;*/
 }
+
+.nav a:hover{
+background:#badbd7;
+color: #416a75;
+transform: scale(107%);
+}
+
 .img_gallery{
 height: 200px ;
 width: 100px ;
