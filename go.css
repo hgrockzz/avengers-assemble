@@ -75,6 +75,10 @@ box-shadow: 2px 2px 5px #a6a6a6;
   height: 34px;
 }
 
+#dark {
+ font-size: 20px; 
+}  
+
 /* Hide default HTML checkbox */
 .roman input {
   opacity: 0;
