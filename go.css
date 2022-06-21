@@ -76,7 +76,9 @@ box-shadow: 2px 2px 5px #a6a6a6;
 }
 
 #dark {
- font-size: 20px; 
+ font-size: 30px;
+ font-family: sans-serif;
+ font-weight: bold; 
 }  
 
 /* Hide default HTML checkbox */
