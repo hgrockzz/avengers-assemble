@@ -13,10 +13,12 @@ border-color:red;
 }
 h1{
 color:red;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 text-align:center;
 }
 h1:hover{
-color:yellow;
+/* color:yellow; */
+color:rgb(97, 242, 255);
 }
 table{
    margin-left: auto;
