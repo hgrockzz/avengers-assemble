@@ -32,16 +32,32 @@ const movList = [
   },
 ]
 
+
 function App() {
   return (
     <div className="App">
 
       <header>
-        <h1 class="heading">HOW TO WATCH MARVEL 
+        <h1 className="heading">HOW TO WATCH MARVEL 
             <br/>MOVIES / SERIES</h1>
-        <h3 class="sub-heading"> &lt; release order &gt;</h3>
+        <h3 className="sub-heading"> &lt; release order &gt;</h3>
       </header>
 
+      {/* <section>
+        {
+          // fetch('marvelOrder.json')
+          // .then(response => response.json())
+          // .then(data => console.log(data))
+          // .then(function (response) {
+          //   return response.json();
+          // })
+          // .then(function (data){
+          //   for(var i=0; i<data.length; i++){
+          //     <Cards img={data[i].img} title={data[i].title}/>;
+          //   }
+          // })
+        }
+      </section> */}
       <section>
         {
           movList.map((x) => {
