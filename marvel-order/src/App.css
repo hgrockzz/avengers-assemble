@@ -26,14 +26,15 @@ section{
 }
 .Cards{
   margin: 15px;
-  border: 2px solid rgb(199, 145, 45);
-  border-radius: 15px;
-  width: 700px;
+  /* border: 2px solid rgb(199, 145, 45); */
+  background-color: rgba(255, 239, 208, 0.088);
+  border-radius: 12px;
+  max-width: 700px;
   height: 350px;
   display: flex;
 }
 .img-box{
-  width: 35%;
+  min-width: 35%;
 }
 .img-box img{
   width: 100%;
@@ -43,4 +44,29 @@ section{
 .text-box{
   padding: 10px;
   font-size: 40px;
+}
+
+/* media queries for mobile device*/
+@media(max-width:586px){
+  header{
+    padding: 5px;
+    min-height: fit-content;
+  }
+  .heading{
+    font-size: 40px;
+  }
+  .sub-heading{
+    font-size: 15px;
+  }
+
+  .Cards{
+    height: 200px;
+  }
+  .img-box{
+    max-width: 35%;
+  }
+  .text-box{
+    padding: 10px;
+    font-size: 20px;
+  }
 }
