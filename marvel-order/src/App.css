@@ -34,6 +34,7 @@ section{
   display: flex;
 }
 .img-box{
+  max-width: 35%;
   min-width: 35%;
 }
 .img-box img{
@@ -44,6 +45,14 @@ section{
 .text-box{
   padding: 10px;
   font-size: 40px;
+}
+
+.profile-badge{
+  position:fixed; 
+  bottom:10px; 
+  right:10px;
+  border: 1px solid #000;
+  border-radius: 50%;
 }
 
 /* media queries for mobile device*/
@@ -61,9 +70,6 @@ section{
 
   .Cards{
     height: 200px;
-  }
-  .img-box{
-    max-width: 35%;
   }
   .text-box{
     padding: 10px;

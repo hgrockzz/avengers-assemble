@@ -1,5 +1,6 @@
 import './App.css';
 import Cards from './components/Cards';
+import Badge from './assets-img/hg-badge.jpeg';
 
 function App() {
   return (
@@ -34,6 +35,11 @@ function App() {
         }
       </section>
 
+      {/* -- hgrockzz profile badge -- */}
+      <a href="https://www.linkedin.com/in/hgrockzz/">
+        <img src={Badge} className="profile-badge" alt="Harshit" />
+      </a>
+      {/* --  -- */}
     </div>
   );
 }
